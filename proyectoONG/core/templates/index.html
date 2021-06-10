@@ -1,0 +1,31 @@
+{% extends "base/base.html" %}
+{% load static %}
+
+{% block contenido %}
+<div class="centro">
+
+    <h1> <b>
+            ONG - AYUDA A UN PELUDO
+        </b> </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Cupiditate, minima temporibus. Saepe quas
+        accusantium pariatur sunt consectetur iste alias, <br> odio quod voluptatum vero, necessitatibus nulla
+        at veritatis ullam quaerat ducimus.
+    </p>
+
+    <h1>ONG - ADOPTA UN ANIMAL ANTES QUE LOS CHINOS</h1>
+
+    <table border="1" class="tabla-centro">
+        <tr>
+            <td> <img src="{% static 'img/gato1.jpg' %}" alt="" width="200" height="200"></td>
+            <td> <u> <a href="{% url 'gatos' %}"> Gatos </a></u></td>
+        </tr>
+        <tr>
+            <td><img src="{% static 'img/perro1.jpg' %}" alt="" width="200" height="200"></td>
+            <td><u> <a href="{% url 'perros' %}">Perros</a> </u></td>
+        </tr>
+
+    </table>
+
+
+</div>
+{% endblock contenido %}
